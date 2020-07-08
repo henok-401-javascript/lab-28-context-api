@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import useForm from '../hooks/useForm';
 
 function ToDoForm(props){
 
- const [updateForm , submitHandler] = useState(props.addTask);
+ const [updateForm , submit , data] = useForm(props.addTask);
 
 return(
   <div>
-       <Form>
+       <Form onSubmit={submit}>
+
 <Form.Group controlId="ToDo-description">
   <Form.Label>Task Description</Form.Label>
   <Form.Control 
@@ -38,7 +40,7 @@ return(
   }}
   type="switch" 
   id='status -switch'
-  // label={status ? 'complete' : 'Incomplete'} 
+    label={data.status ? 'complete' : 'Incomplete'} 
   
   />
 </Form.Group>
@@ -57,9 +59,10 @@ return(
   />
 </Form.Group>
 
-<Button variant="primary" type="button"  onClick={submitHandler}>
+<Button variant="primary" type="submit" >
   Submit
 </Button>
+
 </Form>
   </div>
 );
