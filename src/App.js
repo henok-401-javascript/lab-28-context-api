@@ -1,0 +1,16 @@
+import React from 'react';
+import Header from './components/Header';
+import ToDo from './components/ToDo';
+import './styles/styles.scss';
+
+
+function App() {
+  return (
+    <div className="App">
+     <Header/>
+     <ToDo/>
+    </div>
+  );
+}
+
+export default App;
