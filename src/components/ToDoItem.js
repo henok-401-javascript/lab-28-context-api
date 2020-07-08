@@ -4,9 +4,10 @@ import {Form} from 'react-bootstrap';
 
 
 function ToDoItem(props){
+ 
   return(
     <div>
-<p>{props.data.text}</p>
+<p>{props.data.description}</p>
 <p>{props.data.assigned}</p>
 <p>{props.data.difficulty}</p>
 
@@ -30,5 +31,9 @@ function ToDoItem(props){
     </div>
   )
 }
+
+
+
+
 
 export default ToDoItem;

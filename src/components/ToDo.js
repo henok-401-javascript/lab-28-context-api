@@ -41,7 +41,8 @@ async function deleteTask(index){
 
 <ToDoForm addTask={addTask}/>
 
-<ToDoList tasks={response}
+<ToDoList 
+tasks={response}
 modifyTask={modifyTask}
 deleteTask={deleteTask} />
 </Container>

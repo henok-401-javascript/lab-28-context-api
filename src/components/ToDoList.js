@@ -4,7 +4,8 @@ import ToDoItem from './ToDoItem';
 function ToDoList(props){
 let items = [];
 
-if(props)
+console.log('from todo item',items);
+if(props.tasks)
 for(let i = 0; i < props.tasks; i++)
   items.push(
     <ToDoItem 
