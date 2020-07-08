@@ -44,7 +44,9 @@ if(res.status >= 300){
 
 await setResponse(await res.json());
   }
-if(request) customFetch();
+if(request){
+  customFetch();
+} 
 }, [request, url]);
 
 return {

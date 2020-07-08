@@ -8,8 +8,8 @@
 ### Links and Resources
 
 
-- [submission PR]()
-- [netlify]()
+- [submission PR](https://github.com/henok-401-javascript/lab-28-context-api/pull/3)
+- [netlify](https://lab-28-context-api.netlify.app/)
 
 
 
